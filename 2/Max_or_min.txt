@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num1=in.nextInt();
+        System.out.print("\nEnter another number: ");
+        int num2=in.nextInt();
+        int maximum=Math.max(num1,num2);
+        System.out.println("\nSo the maximum of the two numbers is: "+maximum);
+    }
+}

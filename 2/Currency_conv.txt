@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter your amount in Inr: ");
+        double amount=in.nextDouble();
+        amount=(amount)/74.05;
+        System.out.print("\nSo the amount in USD is: "+amount);
+    }
+}
