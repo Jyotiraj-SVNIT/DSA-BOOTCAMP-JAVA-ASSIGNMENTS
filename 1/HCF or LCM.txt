@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+        int num1,num2,temp1,temp2,temp,hcf,lcm;
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        num1=in.nextInt();
+        System.out.print(num1);
+        System.out.println("\nEnter another number:");
+        num2=in.nextInt();
+        System.out.print(num2);
+
+        temp1=num1;
+        temp2=num2;
+        while(temp2!=0){
+            temp=temp2;
+            temp2=temp1%temp2;
+            temp1=temp;
+        }
+        hcf=temp1;
+        lcm= (num1*num2)/hcf;
+        System.out.print("\nSo the hcf of the two numbers is: "+hcf);
+        System.out.print("\nNow , the lcm of the two numbers is: "+lcm);
+
+    }
+}

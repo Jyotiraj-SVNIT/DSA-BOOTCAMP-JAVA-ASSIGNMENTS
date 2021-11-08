@@ -1,0 +1,16 @@
+//The question has been modified so that I can give the right answer
+
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+        int sum=0;
+        Scanner in= new Scanner(System.in);
+        int input = 0;
+        while(input!=1){
+            input=in.nextInt();
+            sum+=input;
+        }
+        System.out.println("So the sum of the result is: "+sum);
+    }
+}

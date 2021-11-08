@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String[]args){
+        int year;
+        System.out.println("Enter the year ");
+        Scanner in= new Scanner(System.in);
+         year= in.nextInt();
+         System.out.println("The year you typed is: "+year);
+        boolean statment=false;
+        if(year%400==0){
+            statment=true;
+        }else if(year%100==0){
+            statment=false;
+        }else if(year%4==0){
+            statment=true;
+        }else{
+            statment=false;
+        }
+        if(statment){
+            System.out.println("The year "+year+" is a leap year");
+        }else{
+            System.out.println("The year "+year+" is not a leap year");
+        }
+    }
+}
