@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class MyClass {
+    public static void main(String args[]) {
+        int i=0;
+        int p=0;
+        int fib;
+        String fibbonacci="";
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter the count of the fibbonacci series: ");
+        int n=in.nextInt();
+        int count;
+        for(count=0;count<=1;count++){
+            fib=i;
+            fibbonacci+=fib+",";
+        }
+        i++;
+        for(;count<n;count++){
+            int temp=i;
+            i=i+p;
+            p=temp;
+            fib=i;
+            fibbonacci+=fib+",";
+        }
+        System.out.print("So the fibbonacci series is: "+fibbonacci);
+    }
+}
